@@ -12,8 +12,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
     <Head>
-      <title>G Rate Places</title>
-      <meta name="description" content="G Rate Places Dashboard" />
+      <title>Thijssen Data Services</title>
+      <meta name="description" content="Data and Engineering consulting services - Hire Now" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
       <Sidebar>

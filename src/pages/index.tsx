@@ -1,17 +1,25 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-import { Button } from "@/src/components/ui/button";
+import Carousel from "../components/Carousel";
+
+const skills: string[] = [
+  "Customer Segmentation",
+  "FullStack Development",
+  "Machine Learning",
+  "Dashboard Development",
+  "Analytics and Insight",
+  "Process Automation",
+  "Data Pipelining",
+  "API Development",
+];
 
 const Home = () => {
-
-
-    return (
-        <div className="bg-secondary lg:h-screen md:h-full sm:h-full text-text align-middle items-center text-center lg:p-20">
-            <h1 className="lg:text-5xl text-2xl text-text align-middle">- App Development - Analytics & Insight - Customer Segmentation - </h1>
-
+  return (
+    <div className="bg-background lg:h-screen md:h-screen h-full text-text align-middle items-center text-center lg:p-20">
+            <Carousel items={skills} />
         </div>
-    );
-}
+  );
+};
 
 export default Home;

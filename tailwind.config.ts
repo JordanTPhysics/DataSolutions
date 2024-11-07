@@ -1,4 +1,5 @@
 
+import { Scale } from "lucide-react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,13 +10,41 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        marquee: "marquee 20s linear infinite",
+        marquee2: "marquee 20s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)",
+            Scale: "scale(0.75)",
+           },
+           "50%": { Scale: "scale(1.1)",},
+
+          "100%": { transform: "translateX(-100%)",
+            Scale: "scale(0.75)",
+           },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)",
+            Scale: "scale(0.75)",
+           },
+           "50%": { Scale: "scale(1.1)",},
+
+          "100%": { transform: "translateX(0%)",
+            Scale: "scale(0.75)",
+           },
+        },
+      },
+
       screens: {
         mob: {'max':"640px"},
       },
       colors: {
         background: "rgba(var(--background))",
         foreground: "rgba(var(--foreground))",
-        secondary: "rgba(var(--background-secondary))",
+        "background-secondary": "rgba(var(--background-secondary))",
+        "foreground-secondary": "rgba(var(--foreground-secondary))",
         warning: "rgba(var(--warning))",
         success: "rgba(var(--success))",
         danger: "rgba(var(--danger))",

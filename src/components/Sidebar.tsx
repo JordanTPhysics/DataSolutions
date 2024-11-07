@@ -12,8 +12,6 @@ import useMediaQuery from '../lib/media-query';
 import Contact from '../pages/contact';
 const ThemeSwitcher = dynamic(() => import('./ThemeSwitcher'), { ssr: false });
 
-const linkClassName = 'bg-secondary border-2 border-border text-text m-3 p-3 rounded-lg inline-block hover:ml-0 hover:mr-0 hover:bg-foreground smooth';
-
 const Sidebar = ({ children }: { children: ReactNode }) => {
 
     const { theme } = useTheme();
@@ -30,22 +28,20 @@ const Sidebar = ({ children }: { children: ReactNode }) => {
                             md:w-20 md:h-screen md:flex-col md:border-r-[5px] md:fixed
                             sm:h-20 sm:w-full sm:border-b-[5px] sm:sticky sm:top-0 sm:flex-row sm:items-center 
                             p-1 bg-background overflow-x-auto z-50 flex border-border'>
-                <div className="bg-secondary text-text m-3 p-3 border-2 border-icon-border rounded-lg inline-block hover:ml-0 hover:mr-0 hover:bg-foreground smooth">
-                    <ThemeSwitcher />
-                </div>
+
                 <NavLink href="/" ><RxHome size={size} color={iconColor} /></NavLink >
                 <NavLink href="https://www.linkedin.com/in/jordan-thijssen-373a431a5/" ><FaLinkedin size={size} color={iconColor} /></NavLink >
                 <NavLink href="/dash" ><FaRegChartBar size={size} color={iconColor} /> </NavLink >
                 <NavLink href="/contact" ><RxEnvelopeOpen size={size} color={iconColor} /> </NavLink >
-                <NavLink href="https://github.com/JordanTPhysics/Dashboarding" ><FiGithub size={size} color={iconColor} /> </NavLink >
+                <NavLink href="https://github.com/JordanTPhysics" ><FiGithub size={size} color={iconColor} /> </NavLink >
             </div>
             <main className='lg:ml-20 md:ml-20 w-screen lg:w-full h-full'>
-                <header className='bg-secondary items-center text-center'>
+                <header className='bg-background-secondary items-center text-center flex flex-col'>
                     <div>
-                        <h1 className='text-3xl text-text font-bold'> - Jordan Thijssen </h1>
-                        <h1 className='text-3xl text-text font-bold'> Data Explorer - </h1>
+                        <h1 className='lg:text-3xl text-xl text-text font-bold'> - Thijssen Data Services - </h1>
                         <h3 className='text-lg text-text font-semibold'></h3>
                     </div>
+                    <ThemeSwitcher />
 
                 </header>
                 {children}

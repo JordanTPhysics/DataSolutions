@@ -1,0 +1,25 @@
+/* components/Carousel.module.css */
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px; /* Adjust to the width of your container */
+    position: relative;
+  }
+  
+  .carouselInner {
+    display: flex;
+    transition: transform 0.5s ease; /* Adjust speed of transition */
+    width: calc(200%); /* Double width for looping */
+  }
+  
+  .carouselItem {
+    min-width: 100%;
+    box-sizing: border-box;
+    flex: 1 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd; /* Style as needed */
+    height: 200px; /* Adjust height */
+  }
+  
