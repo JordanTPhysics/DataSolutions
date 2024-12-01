@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { services } from '../pages/services/services';
+import { services } from '../lib/services';
 import { useSession } from '../lib/SessionContext';
 
 

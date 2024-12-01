@@ -1,7 +1,7 @@
 // /pages/services/[id].tsx
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
-import { services } from './services';
+import { services } from '../../lib/services';
 
 
 interface ServiceProps {
