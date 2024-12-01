@@ -1,0 +1,1270 @@
+[
+  {
+    "sessionId": 1,
+    "startTime": 1721876350942,
+    "steps": [
+      {
+        "timestamp": 1731879350942,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      }
+    ]
+  },
+  {
+    "sessionId": 2,
+    "startTime": 1722216400798,
+    "steps": [
+      {
+        "timestamp": 1732216400798,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216401789,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216402358,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216402550,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216438728,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      }
+    ]
+  },
+  {
+    "sessionId": 3,
+    "startTime": 1727216473892,
+    "steps": [
+      {
+        "timestamp": 1732216473892,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216482202,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216532484,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216534100,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216534805,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732216535324,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732220336350,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732220340550,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732220363318,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732220364526,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732220365469,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732220928450,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      }
+    ]
+  },
+  {
+    "sessionId": 4,
+    "startTime": 1732221533353,
+    "steps": [
+      {
+        "timestamp": 1732221533353,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      }
+    ]
+  },
+  {
+    "sessionId": 5,
+    "startTime": 1732301584982,
+    "steps": [
+      {
+        "timestamp": 1732301584982,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      }
+    ]
+  },
+  {
+    "sessionId": 6,
+    "steps": [
+      {
+        "timestamp": 1732578426210,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1732578434473,
+        "pageUrl": "http://localhost:3000/",
+        "action": "link",
+        "elementId": "http://localhost:3000/services/db"
+      }
+    ],
+    "startTime": "2024-11-25T23:46:50.921Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 7,
+    "steps": [
+      {
+        "timestamp": 1732745581294,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "contact-link"
+      }
+    ],
+    "startTime": "2024-11-27T22:12:22.608Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 8,
+    "steps": [
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747163625
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747163759
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747165508
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747165707
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747195203
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747195343
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747195434
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747196224
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747196294
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1732747196424
+      },
+      {
+        "timestamp": 1732787528401,
+        "pageUrl": "http://localhost:3000/",
+        "action": "link",
+        "elementId": "http://localhost:3000/services/forecast"
+      }
+    ],
+    "startTime": "2024-11-27T22:13:09.468Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 9,
+    "steps": [
+      {
+        "timestamp": 1732799877043,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800560376,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800564665,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800569480,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800574914,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800575712,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800575865,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800592824,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800593561,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-28T11:10:03.227Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 10,
+    "steps": [
+      {
+        "timestamp": 1732800610824,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800614769,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800615481,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800615920,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732800616089,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-28T13:29:58.547Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 11,
+    "steps": [
+      {
+        "timestamp": 1732802426607,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802429196,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802431637,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802431643,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802433173,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802434285,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802435398,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802436789,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-28T14:00:25.959Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 12,
+    "steps": [
+      {
+        "timestamp": 1732802439429,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802441605,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802459277,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732802736779,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-28T14:00:38.105Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 13,
+    "steps": [
+      {
+        "timestamp": 1732802741980,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732806721406,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-28T14:05:40.756Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 14,
+    "steps": [
+      {
+        "timestamp": 1732806864923,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732807617826,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732811541564,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732811548846,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732811548850,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-28T15:12:15.084Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 15,
+    "steps": [
+      {
+        "timestamp": 1732921958048,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-29T23:12:35.873Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 15,
+    "steps": [
+      {
+        "timestamp": 1732921958048,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-29T23:12:35.873Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 16,
+    "steps": [
+      {
+        "timestamp": 1732922704800,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732922744736,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732923550815,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732923678399,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732923679311,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732924105119,
+        "pageUrl": "home",
+        "action": "link",
+        "elementId": "https://www.linkedin.com/company/pathfinderdatasolution"
+      },
+      {
+        "timestamp": 1732924108927,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732924124071,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732924125295,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732924126632,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732924127775,
+        "pageUrl": "/",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732924300399,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-29T23:21:42.777Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 17,
+    "steps": [
+      {
+        "timestamp": 1732925595161,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-30T00:13:09.582Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 18,
+    "steps": [
+      {
+        "timestamp": 1732968680333,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969052494
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969052496
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969052498
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969054485
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969056318
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969056509
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969056791
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969057215
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969057384
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969057620
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969057779
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969057905
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969058056
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969058132
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969058533
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969058719
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969058819
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969059049
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969059161
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969059292
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969059404
+      },
+      {
+        "action": "form_submit",
+        "elementId": "contact_form",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732969060608
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975654408
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975654411
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975654412
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975655526
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657163
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657226
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657249
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657258
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657308
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657333
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657375
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657384
+      },
+      {
+        "action": "form_submit",
+        "elementId": "contact_form",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975657984
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975684639
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975684641
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975684642
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975686758
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975687607
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975687624
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975687649
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975687682
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975687937
+      },
+      {
+        "action": "form_submit",
+        "elementId": "contact_form",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1732975688392
+      },
+      {
+        "timestamp": 1732975703669,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1732975707975,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-11-30T12:06:31.030Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 19,
+    "steps": [
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042757088
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042757089
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042757090
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042760950
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042767375
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042767573
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042767783
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042768280
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042768553
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042768946
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042769320
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042769410
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042769743
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042769841
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042770063
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042770205
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042770469
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042770580
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042770774
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042770942
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042771179
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042771363
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042771400
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042771545
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042771670
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042772089
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042772461
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042772528
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042772637
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042772754
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042773343
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042773532
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042773679
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042773941
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042774067
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042774167
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042774327
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042774652
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042774771
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042774938
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042775643
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042775812
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042775945
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042776040
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042776130
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042776343
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042776821
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042778149
+      },
+      {
+        "action": "form_interaction",
+        "elementId": "",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042778298
+      },
+      {
+        "action": "form_submit",
+        "elementId": "contact_form",
+        "pageUrl": "http://localhost:3000/",
+        "timestamp": 1733042779631
+      },
+      {
+        "timestamp": 1733042787982,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-12-01T08:45:53.442Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 20,
+    "steps": [
+      {
+        "timestamp": 1733093400817,
+        "pageUrl": "/extra",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1733093430384,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "action": "form_submit",
+        "elementId": "contact_form",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1733093454219
+      },
+      {
+        "timestamp": 1733093458528,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-12-01T22:49:59.122Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  }
+]

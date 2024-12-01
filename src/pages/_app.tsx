@@ -1,24 +1,34 @@
-import React from 'react'
-import '../styles/globals.css'
+"use client";
 
-import dynamic from 'next/dynamic'
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
+import React from 'react';
+import '../styles/globals.css';
 
-const Sidebar = dynamic(() => import('../components/Sidebar'), { ssr: false })
+import type { AppProps } from 'next/app';
+import { useReportWebVitals } from 'next/web-vitals'
+import Head from 'next/head';
+
+import { SessionProvider } from '../lib/SessionContext';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 
+  useReportWebVitals((metric) => {
+   // console.log(metric)
+  });
+
   return (
     <>
-    <Head>
-      <title>Thijssen Data Services</title>
-      <meta name="description" content="Data and Engineering consulting services - Hire Now" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-      <Sidebar>
-          <Component {...pageProps} />
-      </Sidebar>
+      <SessionProvider>
+        <Head>
+          <title>Pathfinder Data Solutions</title>
+          <meta name="description" content="Data Analytics consulting Solutions - Hire Now" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </SessionProvider>
     </>
   )
 }

@@ -1,38 +1,141 @@
-// components/Carousel.tsx
-import React, { useEffect, useRef, useState } from 'react';
-import styles from './Carousel.module.css';
+import React, { useState } from 'react';
 
-interface CarouselProps {
-  items: string[]; // Modify the type here to fit your items (string, image URL, etc.)
+import Link from 'next/link';
+
+import { RiStackLine, RiRobot2Line } from "react-icons/ri";
+import { BiNetworkChart } from "react-icons/bi";
+import { LuAreaChart } from "react-icons/lu";
+import { PiMagnifyingGlassPlusDuotone, PiWrench } from "react-icons/pi";
+import { BsLightningCharge } from "react-icons/bs";
+import { GoDatabase } from "react-icons/go";
+import { SlPeople } from "react-icons/sl";
+import { HiOutlineCursorClick } from "react-icons/hi";
+import { IoTelescopeOutline } from "react-icons/io5";
+
+import useMediaQuery from '../lib/media-query';
+import { useSession } from '../lib/SessionContext';
+import { JourneyStep, UserJourney } from '../lib/UserJourney';
+
+const skills: string[] = [
+  "Customer Segmentation",
+  "Journey Tracking",
+  "TimeSeries Forecast",
+  "Machine Learning",
+  "Dashboard Development",
+  "Analytics and Insight",
+  "Process Automation",
+  "Data Pipeline",
+  "API Development",
+  "Database Management",
+  "FullStack Development",
+];
+
+const renderLink = (text: string, size: number, handleRouteChange: (e: React.MouseEvent<HTMLAnchorElement>) => void) => {
+  switch (text) {
+    case "Journey Tracking":
+      return (
+        <Link href="/services/journey" onClick={handleRouteChange}>
+          <HiOutlineCursorClick size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+    case "FullStack Development":
+      return (
+        <Link href="/services/fullstack" onClick={handleRouteChange} >
+          <RiStackLine size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+    case "Machine Learning":
+      return (
+        <Link href="/services/ml" onClick={handleRouteChange}>
+          <BiNetworkChart size={size} className='mx-auto' />{text}
+        </Link>
+      );
+    case "Dashboard Development":
+      return (
+        <Link href="/services/dashboard" onClick={handleRouteChange}>
+          <LuAreaChart size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+    case "Analytics and Insight":
+      return (
+        <Link href="/services/analytics" onClick={handleRouteChange}>
+          <PiMagnifyingGlassPlusDuotone size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+    case "Process Automation":
+      return (
+        <Link href="/services/automation" onClick={handleRouteChange}>
+          <RiRobot2Line size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+    case "Data Pipeline":
+      return (
+        <Link href="/services/pipeline" onClick={handleRouteChange}>
+          <PiWrench size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+    case "API Development":
+      return (
+        <Link href="/services/api" onClick={handleRouteChange}>
+          <BsLightningCharge size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+    case "Database Management":
+      return (
+        <Link href="/services/db" onClick={handleRouteChange}>
+          <GoDatabase size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+
+    case "Customer Segmentation":
+      return (
+        <Link href="/services/segmentation" onClick={handleRouteChange}>
+          <SlPeople size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+    case "TimeSeries Forecast":
+      return (
+        <Link href="/services/forecast" onClick={handleRouteChange}>
+          <IoTelescopeOutline size={size} className='mx-auto' /> {text}
+        </Link>
+      );
+
+    default:
+      return <Link href="/services/">{text}</Link>;
+
+  }
 }
 
-const Carousel: React.FC<CarouselProps> = ({ items }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselRef = useRef<HTMLDivElement>(null);
+const Carousel = () => {
+  const extendedItems = [...skills, ...skills];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 3000); // Adjust speed as needed
+  const { addJourneyStep, userJourney } = useSession();
+  const handleRouteChange = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const step: JourneyStep = {
+      timestamp: Date.now(),
+      pageUrl: window.location.href,
+      action: "link",
+      elementId: e.currentTarget.href,
+    };
+    addJourneyStep(step, userJourney);
+  }
 
-    return () => clearInterval(interval);
-  }, [items.length]);
+  const size = useMediaQuery('(min-width: 640px)') ? 20 : 15;
 
   return (
-    <div className="overflow-hidden w-full relative" ref={carouselRef}>
+    <div className="font-sans relative w-full overflow-hidden group bg-slate-700 border-y-2 border-y-gray-100 text-text">
       <div
-        className="flex transition-transform duration-1000 ease w-[200%]"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        className={`flex animate-scroll group-hover:animate-scroll-paused`}
+        style={{
+          width: `${extendedItems.length * 18}rem`
+        }}
       >
-        {items.map((item, index) => (
-          <div key={index} className="min-w-full box-sizing">
-            {item}
-          </div>
-        ))}
-        {/* Duplicate items to enable smooth infinite scroll */}
-        {items.map((item, index) => (
-          <div key={`${index}-duplicate`} className={styles.carouselItem}>
-            {item}
+        {extendedItems.map((item, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 px-8 py-2 flex items-center justify-center bg-slate-800 text-lg lg:text-2xl  hover:scale-95 hover:text-slate-800 hover:bg-text transition ease-in-out 3s"
+          >
+            {renderLink(item, size, handleRouteChange)}
           </div>
         ))}
       </div>

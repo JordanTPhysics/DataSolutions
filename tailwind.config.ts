@@ -1,5 +1,5 @@
 
-import { Scale } from "lucide-react";
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,31 +10,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+    },
+      boxShadow: {
+        'text-shadow': '2px 2px 4px rgba(255, 255, 255, 0.5)',
+      },
       animation: {
-        marquee: "marquee 20s linear infinite",
-        marquee2: "marquee 20s linear infinite",
+        scroll: "scroll 40s linear infinite",
+        'scroll-paused': 'scroll 40s linear infinite paused',
       },
       keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(0)",
-            Scale: "scale(0.75)",
-           },
-           "50%": { Scale: "scale(1.1)",},
-
-          "100%": { transform: "translateX(-100%)",
-            Scale: "scale(0.75)",
-           },
-        },
-        marquee2: {
-          "0%": { transform: "translateX(100%)",
-            Scale: "scale(0.75)",
-           },
-           "50%": { Scale: "scale(1.1)",},
-
-          "100%": { transform: "translateX(0%)",
-            Scale: "scale(0.75)",
-           },
-        },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+              },
       },
 
       screens: {
@@ -53,6 +44,9 @@ const config: Config = {
         border: "rgba(var(--border))",
         contrast: "rgba(var(--contrast))",
         "icon-border": "rgba(var(--icon-border))",
+        soil: "rgba(var(--soil))",
+        "slate-800" : "rgba(var(--slate-800))",
+        indigo: "rgba(var(--indigo))",
 
       },
       backgroundImage: {

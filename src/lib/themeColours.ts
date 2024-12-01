@@ -1,5 +1,7 @@
 // utils/themeColors.ts
+"use client";
 
+import { IoHandRightOutline } from "react-icons/io5";
 
 export interface ChartColors {
     background: string;
@@ -11,9 +13,27 @@ export interface ChartColors {
     success: string;
     danger: string;
     info: string;
+    soil: string;
+    slate800: string;
+    indigo: string;
 }
 
 export const getChartColors = (): ChartColors => {
+    if (typeof window === 'undefined') return {
+        background: '16, 48, 16',
+        foreground: '74, 94, 74',
+        backgroundSecondary: '6, 38, 6',
+        text: '245, 235, 245',
+        border: '141, 134, 141',
+        warning: '233, 72, 8',
+        success: '39, 181, 39',
+        danger: '255, 0, 0',
+        info: '53, 53, 193',
+        soil: '84, 57, 45',
+        slate800: '30, 41, 59',
+        indigo: '75, 0, 130',
+    };
+    
     const rootStyle = getComputedStyle(document.documentElement);
 
     return {
@@ -26,6 +46,9 @@ export const getChartColors = (): ChartColors => {
         success: `rgb(${rootStyle.getPropertyValue('--success').trim()})`,
         danger: `rgb(${rootStyle.getPropertyValue('--danger').trim()})`,
         info: `rgb(${rootStyle.getPropertyValue('--info').trim()})`,
+        soil: `rgb(${rootStyle.getPropertyValue('--soil').trim()})`,
+        slate800: `rgb(${rootStyle.getPropertyValue('--slate-800').trim()})`,
+        indigo: `rgb(${rootStyle.getPropertyValue('--indigo').trim()})`,
     };
 };
 
