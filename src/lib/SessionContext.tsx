@@ -72,7 +72,7 @@ export const SessionProvider = ({ children }: { children: ReactNode }) => {
         // Log journey when the page unloads
         window.addEventListener('beforeunload', logJourney);
         return () => window.removeEventListener('beforeunload', logJourney);
-    }, [userJourney, logJourney]);
+    }, [userJourney]);
 
     return (
         <SessionContext.Provider value={{ userJourney: userJourney!, addJourneyStep, getUserJourneys }}>
