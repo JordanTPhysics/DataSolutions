@@ -46,7 +46,7 @@ const Tracker: React.FC = () => {
 
     useEffect(() => {
         getUserJourneys().then(data => setJourneys(data));
-    }, [getUserJourneys]);
+    });
 
     const handleChartClick = (e: React.MouseEvent<HTMLElement>) => {
         addJourneyStep({
@@ -83,7 +83,7 @@ const Tracker: React.FC = () => {
                 />
             </div>
             <div className='col-span-1 lg:max-h-[20vh] overflow-y-scroll overflow-x-hidden row-span-2 bg-foreground-secondary border-border border-4 rounded-md font-serif my-auto'>
-                <h3 className='text-xl border-b-2 border-border'>Current Steps: {userJourney.steps.length}</h3>
+                <h3 className='text-xl border-b-2 border-border'>Current Steps: {userJourney ? userJourney.steps.length : <div>Loading...</div>}</h3>
                 <ul className=''>
                     {userJourney ? userJourney.steps.map((step, index) => (
                         <li 
