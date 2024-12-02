@@ -6,12 +6,10 @@ import TimeSeriesChart from '../components/charts/TimeSeries';
 import BarChart from '../components/charts/BarChart';
 
 const countUserJourneysByDate = (journeys: {startTime: Date}[]): [string[], number[]] => {
-    console.log(journeys);
 
     const countsByDate = journeys.reduce((acc, journey) => {
         const date = new Date(journey.startTime).toISOString().split('T')[0];
         acc[date] = (acc[date] || 0) + 1;
-        console.log(acc);
         return acc;
     }, {} as Record<string, number>);
 

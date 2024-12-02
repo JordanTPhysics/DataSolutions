@@ -29,7 +29,7 @@ const Prompts = () => {
             <li className="flex flex-row p-4"><GiBroadsword size={size} color="silver" className="mr-auto mx-4 swipe text-[24px] md:text-[48px] lg:text-[64px]" /> <span className="px-4 my-auto">Slash Operational Costs</span></li>
             <li className="flex flex-row p-4"><TbZoomMoney size={size} color="goldenrod" className="mr-auto mx-4 flip" /> <span className="px-4 my-auto">Identify Saving Opportunities</span></li>
             <li className="flex flex-row p-4"><RiSpeakLine size={size} className="mr-auto mx-4 swell" color="brown" /> <span className="px-4 my-auto">Track Customer Engagement</span></li>
-            <li className="flex flex-row p-4"><PiStrategy size={size} className="mr-auto mx-4" color="teal" /> <span className="px-4 my-auto">Strategize Marketing</span></li>
+            <li className="flex flex-row p-4 "><PiStrategy size={size} className="mr-auto mx-4 shift" color="teal" /> <span className="px-4 my-auto">Strategize Marketing</span></li>
             <li className="flex flex-row p-4 relative">
               <div className="twist mr-auto mx-4">
                 <div className="icon-container">

@@ -233,6 +233,22 @@
       opacity: 0;
     }
   }
+
+  .shift {
+    color: linear-gradient(90deg, teal, blue, purple, teal);
+    background-size: 300%;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 3s linear infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
   
 }
 

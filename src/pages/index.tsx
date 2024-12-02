@@ -43,7 +43,7 @@ const Home = () => {
         <section id="business" className="w-1/2  border-b-2 border-border my-4">
           <h2 className="text-2xl lg:text-5xl p-4 border-b-2 border-border m-4">Why Choose Pathfinder?</h2>
           <span className="lg:text-xl text-md p-4 my-2">
-            Our experts are passionate about data science, analytics, AI integration.
+            Our experts are passionate about data science, analytics and AI integration.
             We love supporting small and medium enterprise (SME) with the latest technologies.
             We specifically target small businesses as the backbone of our economy, enriching communities and preserving cash flow and jobs in local areas.
           </span>
