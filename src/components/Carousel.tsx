@@ -123,9 +123,9 @@ const Carousel = () => {
   const size = useMediaQuery('(min-width: 640px)') ? 20 : 15;
 
   return (
-    <div className="font-sans relative w-full overflow-hidden group bg-slate-700 border-y-2 border-y-gray-100 text-text">
+    <div className="font-sans relative w-full overflow-hidden group bg-slate-800 border-y-2 border-y-gray-100 ">
       <div
-        className={`flex animate-scroll group-hover:animate-scroll-paused`}
+        className={`flex animate-scroll group-hover:animate-scroll-paused text-text relative`}
         style={{
           width: `${extendedItems.length * 18}rem`
         }}
@@ -133,7 +133,7 @@ const Carousel = () => {
         {extendedItems.map((item, index) => (
           <div
             key={index}
-            className="flex-shrink-0 px-8 py-2 flex items-center justify-center bg-slate-800 text-lg lg:text-2xl  hover:scale-95 hover:text-slate-800 hover:bg-text transition ease-in-out 3s"
+            className=" flex-shrink-0 px-8 py-2 flex items-center justify-center bg-slate-800/30 text-lg lg:text-2xl  hover:scale-95 hover:text-slate-800 hover:bg-text transition ease-in-out 3s"
           >
             {renderLink(item, size, handleRouteChange)}
           </div>

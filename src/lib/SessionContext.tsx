@@ -4,7 +4,7 @@ import { JourneyStep, UserJourney } from './UserJourney';
 interface SessionContextProps {
     userJourney: UserJourney;
     addJourneyStep: (step: JourneyStep, journey: UserJourney) => void;
-    getUserJourneys: () => Promise<UserJourney[]>;
+    journeyData: UserJourney[];
 }
 
 const fetchNextJourneyId = async () => {
@@ -18,6 +18,7 @@ const SessionContext = createContext<SessionContextProps | undefined>(undefined)
 export const SessionProvider = ({ children }: { children: ReactNode }) => {
     const [userJourney, setUserJourney] = useState<UserJourney | null>(null);
     const [nextJourneyId, setNextJourneyId] = useState<number | null>(null);
+    const [journeyData, setJourneyData] = useState<UserJourney[]>([]);
 
     const addJourneyStep = (step: JourneyStep, journey: UserJourney) => {
         journey.addStep(step);
@@ -34,13 +35,20 @@ export const SessionProvider = ({ children }: { children: ReactNode }) => {
         }
     };
 
-    const getUserJourneys = async () => {
-        const response = await fetch('/api/getUserJourneys');
-        const data = await response.json();
-        const parsedData = JSON.parse(data) as UserJourney[];
+    useEffect(() => {
+        const getUserJourneys = async () => {
+            const response = await fetch('/api/getUserJourneys');
+            const data = await response.json();
+            const parsedData = JSON.parse(data) as UserJourney[];
+    
+            return parsedData.map(journey => new UserJourney(journey.sessionId, journey.steps, journey.city, journey.country, new Date(journey.startTime)));
+        }
 
-        return parsedData.map(journey => new UserJourney(journey.sessionId, journey.steps, journey.city, journey.country, new Date(journey.startTime)));
-    }
+        getUserJourneys().then(journeys => {
+            setJourneyData(journeys);
+        });
+
+    }, []);
 
     useEffect(() => {
         // Fetch next journey ID only if not already set
@@ -66,7 +74,7 @@ export const SessionProvider = ({ children }: { children: ReactNode }) => {
 
             });
         }
-    }, [nextJourneyId, userJourney]);
+    }, []);
 
     useEffect(() => {
         // Log journey when the page unloads
@@ -75,7 +83,7 @@ export const SessionProvider = ({ children }: { children: ReactNode }) => {
     }, [userJourney]);
 
     return (
-        <SessionContext.Provider value={{ userJourney: userJourney!, addJourneyStep, getUserJourneys }}>
+        <SessionContext.Provider value={{ userJourney: userJourney!, addJourneyStep, journeyData }}>
             {children}
         </SessionContext.Provider>
     );

@@ -22,7 +22,7 @@ export default function Footer() {
   const iconColor = 'rgba(var(--text))';
 
   return <footer className='bg-gradient-to-b from-background-secondary to-soil border-t-8 border-border text-text text-center pt-2'>
-    <h3 className='text-2xl lg:text-3xl'>Reach out <span className='italic'>Today</span> and discover how data driven decisions can help your business</h3>
+    <h3 className='text-xl lg:text-2xl'>Reach out <span className='italic'>Today</span> to book a free 30 minute consultation. Discover how we take your business to the <span className="text-red-600">Next Level</span></h3>
     <Contact />
     <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1'>
       <div className='mx-auto'>

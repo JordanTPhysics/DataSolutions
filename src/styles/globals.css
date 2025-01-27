@@ -6,10 +6,10 @@
 
   :root {
 
-    --background: 16 48 16;
-    --background-secondary: 6 38 6;
-    --foreground: 74 94 74;
-    --foreground-secondary: 45 127 52;
+    --background: 16 48 16 / 0.3;
+    --background-secondary: 6 38 6 / 0.3;
+    --foreground: 74 94 74 / 0.7;
+    --foreground-secondary: 45 127 52 / 0.7;
     --border: 141 134 141;
     --warning: 233 72 8;
     --success: 39 181 39;
@@ -76,9 +76,20 @@
     background-color: rgba(var(--background), 0.5);
   }
 
-  .header.background-loaded {
-    background-image: url('/images/background.jpg');
+  .fullscreen-bg {
+    position: fixed; /* Ensure it stays fixed on the screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('/images/pathfinder_bg.jpg'); /* Update with your image path */
+    background-size: cover; /* Make sure the image covers the whole area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Make it non-scrollable */
+    z-index: -1;
   }
+  
 
   .link-border {
     border-radius: var(--radius);

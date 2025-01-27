@@ -1266,5 +1266,441 @@
     "startTime": "2024-12-01T22:49:59.122Z",
     "city": "Unknown",
     "country": "Unknown"
+  },
+  {
+    "sessionId": 21,
+    "steps": [
+      {
+        "timestamp": 1735590530411,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-12-30T20:28:14.866Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 22,
+    "steps": [
+      {
+        "timestamp": 1735590602477,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1735590604066,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1735590604809,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1735590607343,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1735590608619,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1735590608622,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1735590608623,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1735590719963,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2024-12-30T20:29:43.809Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 23,
+    "steps": [
+      {
+        "action": "form_submit",
+        "elementId": "contact_form",
+        "pageUrl": "http://localhost:3000/tracker",
+        "timestamp": 1736608393050
+      },
+      {
+        "timestamp": 1736610520097,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2025-01-11T15:08:11.435Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 24,
+    "steps": [
+      {
+        "timestamp": 1736697359133,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1736697388596,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2025-01-12T15:55:16.612Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 25,
+    "steps": [
+      {
+        "timestamp": 1736706466408,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706497208,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706498737,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706500288,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706500728,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706500920,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706501088,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706501248,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706501400,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706501968,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706502152,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706502321,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706502792,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706502953,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706503144,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706503320,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706503456,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706513200,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706513928,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706514440,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706514960,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2025-01-12T18:24:38.264Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 25,
+    "steps": [
+      {
+        "timestamp": 1736706466408,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706497208,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706498737,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706500288,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706500728,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706500920,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706501088,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706501248,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706501400,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706501968,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706502152,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706502321,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706502792,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706502953,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706503144,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706503320,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706503456,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706513200,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706513928,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706514440,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736706514960,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2025-01-12T18:24:38.264Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 26,
+    "steps": [
+      {
+        "timestamp": 1736759756027,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2025-01-13T09:15:41.698Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 27,
+    "steps": [
+      {
+        "timestamp": 1736805211464,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736805223864,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736848564224,
+        "pageUrl": "/tracker",
+        "action": "click",
+        "elementId": "header-link"
+      },
+      {
+        "timestamp": 1736848566567,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "contact-link"
+      },
+      {
+        "timestamp": 1736848719974,
+        "pageUrl": "http://localhost:3000/",
+        "action": "link",
+        "elementId": "http://localhost:3000/services/segmentation"
+      },
+      {
+        "timestamp": 1736885288545,
+        "pageUrl": "home",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2025-01-13T21:17:59.277Z",
+    "city": "Unknown",
+    "country": "Unknown"
   }
 ]

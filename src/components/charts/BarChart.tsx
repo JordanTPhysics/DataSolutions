@@ -57,7 +57,7 @@ const BarChart = ({ labels, values, title }: BarChartProps) => {
     responsive: true,
     maintainAspectRatio: false,
     backgroundColor: chartColours.foreground,
-    color: chartColours.text,
+    color: 'white',
     plugins: {
       tooltip: {
         callbacks: {
@@ -69,7 +69,7 @@ const BarChart = ({ labels, values, title }: BarChartProps) => {
       title: {
         display: true,
         text: title,
-        color: chartColours.text,
+        color: 'white',
         font: {
           size: 24,
           family: 'Serif',
@@ -88,14 +88,14 @@ const BarChart = ({ labels, values, title }: BarChartProps) => {
         title: {
           display: true,
           text: 'Month',
-          color: chartColours.text,
+          color: 'white',
           font: {
             size: 18,
             family: 'Serif',
           },
         },
         ticks: {
-          color: chartColours.text,
+          color: 'white',
           font: {
             size: 14,
             family: 'Serif',
@@ -105,14 +105,14 @@ const BarChart = ({ labels, values, title }: BarChartProps) => {
       y: {
         title: {
           display: false,
-          color: chartColours.text,
+          color: 'white',
           font: {
             size: 18,
             family: 'Serif',
           },
         },
         ticks: {
-          color: chartColours.text,
+          color: 'white',
           font: {
             size: 14,
             family: 'Serif',
@@ -130,7 +130,7 @@ const BarChart = ({ labels, values, title }: BarChartProps) => {
     ],
   };
 
-  return <div className="w-full min-h-[400px] max-h-full bg-foreground rounded-lg border-4 border-border m-1 p-1 hover:scale-105 duration-200 ease-linear"> <Bar data={chartData} options={options} /></div>;
+  return <div className="w-full min-h-[400px] max-h-full rounded-sm bg-slate-500 p-1"> <Bar data={chartData} options={options} /></div>;
 
 
 };

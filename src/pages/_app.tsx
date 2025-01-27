@@ -25,6 +25,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           <meta name="description" content="Data Analytics consulting Solutions - Hire Now" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <div className='fullscreen-bg'></div>
         <Header />
         <Component {...pageProps} />
         <Footer />

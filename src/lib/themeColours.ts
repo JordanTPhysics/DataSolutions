@@ -1,7 +1,20 @@
 // utils/themeColors.ts
 "use client";
 
-import { IoHandRightOutline } from "react-icons/io5";
+export const CHART_COLORS = {
+    red: 'rgb(255, 99, 132)',
+    orange: 'rgb(255, 159, 64)',
+    yellow: 'rgb(255, 205, 86)',
+    green: 'rgb(75, 192, 192)',
+    blue: 'rgb(54, 162, 235)',
+    purple: 'rgb(153, 102, 255)',
+    grey: 'rgb(201, 203, 207)',
+    teal: 'rgb(0,128,128)',
+    pink: 'rgb(255,192,203)',
+    brown: 'rgb(165,42,42)',
+    lime: 'rgb(0,255,0)',
+    indigo: 'rgb(75,0,130)',
+  };
 
 export interface ChartColors {
     background: string;
@@ -23,7 +36,7 @@ export const getChartColors = (): ChartColors => {
         background: '16, 48, 16',
         foreground: '74, 94, 74',
         backgroundSecondary: '6, 38, 6',
-        text: '245, 235, 245',
+        text: '10, 20, 10',
         border: '141, 134, 141',
         warning: '233, 72, 8',
         success: '39, 181, 39',
@@ -87,3 +100,22 @@ export const exponentialGradient = (color1: string, color2: string, steps: numbe
     const [r, g, b] = color.match(/[0-9]{1,3}/g)?.map(Number) ?? [0, 0, 0];
     return [r, g, b];
   };
+
+type ChartColorKeys = keyof typeof CHART_COLORS;
+
+export function colorNameToRgb(color: ChartColorKeys): string {
+    try {
+        const rgb = CHART_COLORS[color];
+        return rgb;
+    } catch {
+        return 'rgb(0, 0, 0)'; // default color if not found
+    }
+}
+
+export function rgbToRgba(rgb: string, alpha: number): string {
+    const [r, g, b] = parseRGB(rgb);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+
+

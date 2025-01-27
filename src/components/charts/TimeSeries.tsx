@@ -6,7 +6,9 @@ import { Scatter } from 'react-chartjs-2';
 import 'chartjs-adapter-moment';
 import { ChartOptions } from "chart.js";
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import { getChartColors, ChartColors } from '../../lib/themeColours';
+import { getChartColors, ChartColors, colorNameToRgb, rgbToRgba } from '../../lib/themeColours';
+
+
 
 Chart.register(
     TimeScale,
@@ -15,35 +17,36 @@ Chart.register(
 
 type TimeSeriesChartProps = {
     dates: string[],
-    values: number[],
-    title: string,
+    valueSet: number[][],
+    chartName: string,
+    titles: string[],
     onClick?: (e: React.MouseEvent<HTMLElement>) => void,
     id?: string,
 };
 
-const CreateDataSet = (dates: string[], values: number[], title: string, chartColours: ChartColors) => {
+const CreateDataSet = (dates: string[], values: number[], title: string, chartColour: any) => {
     const data = dates.map((date, index) => ({
         x: date,
         y: values[index],
     }));
+    
 
     return {
         label: title,
-        data,
-        backgroundColor: 'indigo',
-        borderColor: 'indigo', // Line color
+        data: data,
+        backgroundColor: rgbToRgba(colorNameToRgb(chartColour), 0.3), // Fill color
+        borderColor: colorNameToRgb(chartColour), // Line color
         borderWidth: 2, // Line thickness
-        tension: 0.2, // Controls line smoothness (0 for straight lines)
+        tension: 0, // Controls line smoothness (0 for straight lines)
         showLine: true, // Connect points with a line
-        fill: false, // Disable area filling under the line
-        fillOpacity: 0.2, // Area fill opacity
+        fill: true,
         pointRadius: 4, // Point size
     };
 };
 
 
 
-const TimeSeriesChart = ({ dates, values, title }: TimeSeriesChartProps) => {
+const TimeSeriesChart = ({ dates, valueSet, titles, chartName }: TimeSeriesChartProps) => {
     const [chartColours, setChartColours] = useState<ChartColors>(getChartColors());
 
     useEffect(() => {
@@ -65,15 +68,23 @@ const TimeSeriesChart = ({ dates, values, title }: TimeSeriesChartProps) => {
         plugins: {
             title: {
                 display: true,
-                text: title,
+                text: chartName,
                 font: {
                     size: 24,
                     family: 'Serif',
                 },
-                color: chartColours.text,
+                color: 'white',
             },
             legend: {
-                display: false,
+                display: true,
+                textDirection: 'ltr',
+                labels: {
+                    color: 'white',
+                    font: {
+                        size: 14,
+                        family: 'Serif',
+                    },
+                },
             },
             datalabels: {
                 display: false,
@@ -112,7 +123,7 @@ const TimeSeriesChart = ({ dates, values, title }: TimeSeriesChartProps) => {
                     },
                 },
                 ticks: {
-                    color: chartColours.text,
+                    color: 'white',
                     font: {
                         size: 14,
                         family: 'Serif',
@@ -122,14 +133,14 @@ const TimeSeriesChart = ({ dates, values, title }: TimeSeriesChartProps) => {
             y: {
                 title: {
                     display: false,
-                    text: title,
-                    color: chartColours.text,
+                    text: "",
+                    color: 'white',
                 },
-                max: Math.max(...values) + 1,
+                max: Math.max(...valueSet[0]) + 1,
                 min: 0,
 
                 ticks: {
-                    color: chartColours.text,
+                    color: 'white',
                     font: {
                         size: 14,
                         family: 'Serif',
@@ -142,11 +153,12 @@ const TimeSeriesChart = ({ dates, values, title }: TimeSeriesChartProps) => {
 
     const chartData = {
         datasets: [
-            CreateDataSet(dates, values, title, chartColours),
+            CreateDataSet(dates, valueSet[0], titles[0], 'indigo'),
+            CreateDataSet(dates, valueSet[1], titles[1], 'teal'),
         ],
     };
 
-    return dates ? <div className="w-full min-h-[400px] max-h-full bg-foreground rounded-lg border-4 border-border m-1 p-1 hover:scale-105 duration-200 ease-linear">  <Scatter data={chartData} options={options} /> </div> : "Loading...";
+    return dates ? <div className="w-full min-h-[400px] max-h-full bg-slate-500 rounded-sm p-1">  <Scatter data={chartData} options={options} /> </div> : "Loading...";
 };
 
 export default TimeSeriesChart;

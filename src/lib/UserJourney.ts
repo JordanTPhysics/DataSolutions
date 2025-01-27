@@ -47,6 +47,27 @@ export class UserJourney {
       return this.steps.filter(step => step.action === 'link_click').length;
     }
 
+    public didFormSubmit() {
+      return this.steps.some(step => step.action === 'form_submit');
+    }
+
+    public didFormInteract() {
+      return this.steps.some(step => step.action === 'form_interaction');
+    }
+
+    public static getAverageJourneyLength(journeys: UserJourney[]) {
+      if(journeys.length === 0) return 0;
+      return journeys.reduce((acc, journey) => acc + journey.getNumberOfSteps(), 0) / journeys.length;
+    }
+
+    public static getTotalJourneysByMonth(journeys: UserJourney[], month: number, year: number) {
+      return journeys.filter(journey => journey.startTime.getMonth() === month && journey.startTime.getFullYear() === year).length;
+    }
+
+    public static getTotalJourneysByDay(journeys: UserJourney[], day: number, month: number) {
+      return journeys.filter(journey => journey.startTime.getDate() === day && journey.startTime.getMonth() === month).length;
+    }
+
     public static getLongestJourney(journeys: UserJourney[]) {
       if(journeys.length === 0) return null;
       return journeys.reduce((longest, current) => {
@@ -79,8 +100,18 @@ export class UserJourney {
     public static formConversionRate(journeys: UserJourney[]) {
       const formJourneys = journeys.filter(journey => journey.steps.some(step => step.elementId === 'contact_form'));
       const formConversions = formJourneys.filter(journey => journey.steps.some(step => step.action === 'form_submit'));
-      return formJourneys.length === 0 ? "0" : (100 * (formConversions.length / journeys.length)).toFixed(0);
+      return formJourneys.length === 0 ? 0 : (100 * (formConversions.length / journeys.length));
     }
+
+    public static monthlyConversionRate(journeys: UserJourney[], month: number, year: number) {
+      const formJourneys = journeys.filter(journey => journey.steps.some(step => step.elementId === 'contact_form'));
+      const formConversions = formJourneys.filter(journey => journey.steps.some(step => step.action === 'form_submit'));
+      const monthlyJourneys = formJourneys.filter(journey => journey.startTime.getMonth() === month && journey.startTime.getFullYear() === year);
+      const monthlyConversions = formConversions.filter(journey => journey.startTime.getMonth() === month && journey.startTime.getFullYear() === year);
+      return monthlyJourneys.length === 0 ? 0 : (100 * (monthlyConversions.length / monthlyJourneys.length));
+    }
+
+
 
   
     public log() {

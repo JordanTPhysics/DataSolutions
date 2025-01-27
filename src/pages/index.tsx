@@ -29,12 +29,13 @@ const Home = () => {
   return (
     <>
       <Carousel />
-      <div className=" bg-gradient-to-t from-background to-slate-800 h-full text-text flex flex-col align-middle items-center text-center">
-        <section id="main" className="flex flex-col items-center text-center">
-          <h3 className="lg:text-2xl text-lg p-4 m-4 lg:max-w-[50vw] border-b-2 border-border">A Data Analytics consulting agency dedicated to fulfil your business needs. We see value in your data where you don&apos;t. Safely navigate your dense <span className="font-bold">jungle</span>  of data to <span className="font-bold">explore</span> new opportunities and <span className="font-bold">drop</span> issues preventing growth.<br /><br />
+      <div className="text-text bg-gradient-to-b from-slate-800 to-background h-full flex flex-col align-middle items-center text-center">
+        <section id="main" className="flex flex-col items-center text-center text-text">
+          <h3 className="lg:text-2xl text-lg p-4 m-4 lg:max-w-[50vw] border-b-2 border-border text-text">A Data Analytics consulting agency dedicated to fulfil your business needs. We see value in your data where you don&apos;t. Safely navigate your dense <span className="font-bold">jungle</span>  of data to <span className="font-bold">explore</span> new opportunities and <span className="font-bold">snuff out</span> issues preventing growth.<br /><br />
             <Link href="" className="hover:underline font-bold text-red-600" onClick={handleContactClick}>Hire Now</Link>{"   "}
             to discover how we can help... </h3>
         </section>
+
 
         <section id="attributes" className="flex flex-col items-center text-center my-4 overflow-visible border-b-2 border-border">
           <Prompts />
