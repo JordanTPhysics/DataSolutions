@@ -7,6 +7,10 @@ import { UserJourney, JourneyStep } from '../lib/UserJourney';
 import TimeSeriesChart from '../components/charts/TimeSeries';
 import BarChart from '../components/charts/BarChart';
 
+
+const getLastMonth = (today: Date) => today.getMonth() == 0 ? 11 : today.getMonth() - 1
+const getLastYearIfJan = (today: Date) => today.getMonth() == 0 ? today.getFullYear() - 1 : today.getFullYear()
+
 const countUserJourneysByDate = (journeys: { startTime: Date }[]): [string[], number[]] => {
 
     const countsByDate = journeys.reduce((acc, journey) => {
@@ -75,11 +79,11 @@ const Tracker: React.FC = () => {
     const longestJourney = journeyData ? UserJourney.getLongestJourney(journeyData) : null;
     const totalConversionRate = UserJourney.formConversionRate(journeyData);
     const thisMonthConversionRate = UserJourney.monthlyConversionRate(journeyData, today.getMonth(), today.getFullYear());
-    const lastMonthConversionRate = 185 // UserJourney.monthlyConversionRate(journeyData, today.getMonth() - 1, today.getFullYear());
+    const lastMonthConversionRate = UserJourney.monthlyConversionRate(journeyData, getLastMonth(today), getLastYearIfJan(today));
     const busiestDay = UserJourney.getBusiestDay(journeyData);
 
     const journeysThisMonth = UserJourney.getTotalJourneysByMonth(journeyData, today.getMonth(), today.getFullYear());
-    const journeysLastMonth = UserJourney.getTotalJourneysByMonth(journeyData, today.getMonth() == 0 ? 11 : today.getMonth() - 1, today.getFullYear());
+    const journeysLastMonth = UserJourney.getTotalJourneysByMonth(journeyData, getLastMonth(today), getLastYearIfJan(today));
 
 
     return (
@@ -106,7 +110,7 @@ const Tracker: React.FC = () => {
                                 <div>
                                     Busiest Day <br />
                                     <span>{busiestDay}</span><br />
-                                    <span>{UserJourney.getTotalJourneysByDay(journeyData, new Date(busiestDay).getDay(), new Date(busiestDay).getMonth())} journeys</span>
+                                    <span>{UserJourney.getTotalJourneysByDay(journeyData, new Date(busiestDay))} journeys</span>
                                 </div>
                             ) : (
                                 <p>No journeys</p>

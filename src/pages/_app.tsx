@@ -5,6 +5,7 @@ import '../styles/globals.css';
 
 import type { AppProps } from 'next/app';
 import { useReportWebVitals } from 'next/web-vitals'
+import { Analytics } from "@vercel/analytics/react"
 import Head from 'next/head';
 
 import { SessionProvider } from '../lib/SessionContext';
