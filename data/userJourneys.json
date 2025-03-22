@@ -1702,5 +1702,33 @@
     "startTime": "2025-01-13T21:17:59.277Z",
     "city": "Unknown",
     "country": "Unknown"
+  },
+  {
+    "sessionId": 28,
+    "steps": [
+      {
+        "timestamp": 1742604328254,
+        "pageUrl": "/policy/khushu",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2025-03-22T00:45:18.697Z",
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  {
+    "sessionId": 28,
+    "steps": [
+      {
+        "timestamp": 1742604328254,
+        "pageUrl": "/policy/khushu",
+        "action": "click",
+        "elementId": "header-link"
+      }
+    ],
+    "startTime": "2025-03-22T00:45:18.697Z",
+    "city": "Unknown",
+    "country": "Unknown"
   }
 ]

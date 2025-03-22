@@ -41,7 +41,7 @@ const Home = () => {
           <Prompts />
         </section>
 
-        <section id="business" className="w-1/2  border-b-2 border-border my-4">
+        <section id="business" className="w-1/2 border-b-2 border-border my-4">
           <h2 className="text-2xl lg:text-5xl p-4 border-b-2 border-border m-4">Why Choose Pathfinder?</h2>
           <span className="lg:text-xl text-md p-4 my-2">
             Our experts are passionate about data science, analytics and AI integration.

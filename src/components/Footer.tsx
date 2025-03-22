@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 import { RiNextjsLine, RiReactjsLine, RiTailwindCssLine } from 'react-icons/ri';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -24,7 +24,7 @@ export default function Footer() {
   return <footer className='bg-gradient-to-b from-background-secondary to-soil border-t-8 border-border text-text text-center pt-2'>
     <h3 className='text-xl lg:text-2xl'>Reach out <span className='italic'>Today</span> to book a free 30 minute consultation. Discover how we take your business to the <span className="text-red-600">Next Level</span></h3>
     <Contact />
-    <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1'>
+    <div className='flex flex-row justify-evenly'>
       <div className='mx-auto'>
         Built using NextJS and Tailwind CSS
         <div className='flex flex-row'>
@@ -36,14 +36,18 @@ export default function Footer() {
         <div className='flex flex-row'>
           <Link href='https://www.linkedin.com/company/pathfinderdatasolution' className='mx-auto' onClick={handleLinkClick} target='_blank'><FaLinkedin size={size} color="teal" /></Link>
           <Link href='https://github.com/JordanTPhysics/DataSolutions' className='mx-auto' onClick={handleLinkClick} target='_blank'><FaGithub size={size} color={iconColor} /></Link>
+
+          <Link href='/policy/khushu' className='mx-auto' onClick={handleLinkClick}><Image className='rounded-lg' src="/images/khushu.png" width={50} height={50} alt='Khushu logo'></Image></Link>
+          <Link href='/policy' className='mx-auto' onClick={handleLinkClick}><Image className='rounded-lg' src="/favicon.ico" width={50} height={50} alt='Pathfinder logo'></Image></Link>
         </div>
       </div>
-      <div>
+      <div className='mx-auto'>
         Icons from React Icons
         <div className='flex flex-row'>
           <Link href='https://react-icons.github.io/react-icons/' className='mx-auto' onClick={handleLinkClick} target='_blank'><RiReactjsLine size={size} color="orange" /></Link>
         </div>
       </div>
+
     </div>
   </footer>;
 }
